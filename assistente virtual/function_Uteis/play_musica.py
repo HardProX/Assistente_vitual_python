@@ -65,7 +65,7 @@ def reproduzir_musica():
                     break
                 if aleatorio != repitido:
                     musica = lista_musicas[aleatorio]
-                    pygame.mixer.music.load(f"../musicas/rock/{musica}")
+                    pygame.mixer.music.load(f"musicas/rock/{musica}")
                     pygame.mixer.music.play()
                     while pygame.mixer.music.get_busy() == True:
                         continue
@@ -80,7 +80,7 @@ def reproduzir_musica():
                 lista_musicas_selecionadas.append(music)
             for c in range(0, max):
                 musica = lista_musicas[lista_musicas_selecionadas[c]]
-                pygame.mixer.music.load(f"../musicas/rock/{musica}")
+                pygame.mixer.music.load(f"musicas/rock/{musica}")
                 pygame.mixer.music.play()
                 while pygame.mixer.music.get_busy() == True:
                     continue
@@ -105,7 +105,7 @@ def reproduzir_musica():
                     break
                 if aleatorio != repitido:
                     musica = lista_musicas[aleatorio]
-                    pygame.mixer.music.load(f"../musicas/pop/{musica}")
+                    pygame.mixer.music.load(f"musicas/pop/{musica}")
                     pygame.mixer.music.play()
                     while pygame.mixer.music.get_busy() == True:
                         continue
@@ -120,7 +120,7 @@ def reproduzir_musica():
                 lista_musicas_selecionadas.append(music)
             for c in range(0, max):
                 musica = lista_musicas[lista_musicas_selecionadas[c]]
-                pygame.mixer.music.load(f"../musicas/pop/{musica}")
+                pygame.mixer.music.load(f"musicas/pop/{musica}")
                 pygame.mixer.music.play()
                 while pygame.mixer.music.get_busy() == True:
                     continue
@@ -145,7 +145,7 @@ def reproduzir_musica():
                     break
                 if aleatorio != repitido:
                     musica = lista_musicas[aleatorio]
-                    pygame.mixer.music.load(f"../musicas/relaxar/{musica}")
+                    pygame.mixer.music.load(f"musicas/relaxar/{musica}")
                     pygame.mixer.music.play()
                     while pygame.mixer.music.get_busy() == True:
                         continue
@@ -160,7 +160,7 @@ def reproduzir_musica():
                 lista_musicas_selecionadas.append(music)
             for c in range(0, max):
                 musica = lista_musicas[lista_musicas_selecionadas[c]]
-                pygame.mixer.music.load(f"../musicas/relaxar/{musica}")
+                pygame.mixer.music.load(f"musicas/relaxar/{musica}")
                 pygame.mixer.music.play()
                 while pygame.mixer.music.get_busy() == True:
                     continue
@@ -185,7 +185,7 @@ def reproduzir_musica():
                     break
                 if aleatorio != repitido:
                     musica = lista_musicas[aleatorio]
-                    pygame.mixer.music.load(f"../musicas/rap/{musica}")
+                    pygame.mixer.music.load(f"musicas/rap/{musica}")
                     pygame.mixer.music.play()
                     while pygame.mixer.music.get_busy() == True:
                         continue
@@ -200,7 +200,7 @@ def reproduzir_musica():
                 lista_musicas_selecionadas.append(music)
             for c in range(0, max):
                 musica = lista_musicas[lista_musicas_selecionadas[c]]
-                pygame.mixer.music.load(f"../musicas/rap/{musica}")
+                pygame.mixer.music.load(f"musicas/rap/{musica}")
                 pygame.mixer.music.play()
                 while pygame.mixer.music.get_busy() == True:
                     continue
@@ -225,7 +225,7 @@ def reproduzir_musica():
                     break
                 if aleatorio != repitido:
                     musica = lista_musicas[aleatorio]
-                    pygame.mixer.music.load(f"../musicas/sads/{musica}")
+                    pygame.mixer.music.load(f"musicas/sads/{musica}")
                     pygame.mixer.music.play()
                     while pygame.mixer.music.get_busy() == True:
                         continue
@@ -240,7 +240,7 @@ def reproduzir_musica():
                 lista_musicas_selecionadas.append(music)
             for c in range(0, max):
                 musica = lista_musicas[lista_musicas_selecionadas[c]]
-                pygame.mixer.music.load(f"../musicas/sads/{musica}")
+                pygame.mixer.music.load(f"musicas/sads/{musica}")
                 pygame.mixer.music.play()
                 while pygame.mixer.music.get_busy() == True:
                     continue
