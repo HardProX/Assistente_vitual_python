@@ -40,7 +40,7 @@ def reproduzir_musica():
         print(f'   * {key}')
     print('-' * 30)
 
-    basicos.reproduzir_voz('Aquir estão todas as playlist criadas')
+    basicos.reproduzir_voz('Aquir estão todas as playlist já criadas')
     basicos.reproduzir_voz('selecione a playlist que voçê deseja')
     reps = str(input('Qual playlist voçê que selecionar? ')).strip().lower()
 
