@@ -5,11 +5,11 @@ import pygame
 
 def reproduzir_musica():
     estilo_musicas = {'rock': [],"pop" : [], "relaxar" : [], "rap" : [], "sads" : []}
-    songs_rock = basicos.lerArquivos('../musicas/rock/','rock songs','txt')
-    songs_pop = basicos.lerArquivos('../musicas/pop/','pop songs','txt')
-    songs_relaxar = basicos.lerArquivos('../musicas/relaxar/', 'relaxar songs', 'txt')
-    songs_rap = basicos.lerArquivos('../musicas/rap/', 'rap songs', 'txt')
-    songs_sads = basicos.lerArquivos('../musicas/sads/', 'sads songs', 'txt')
+    songs_rock = basicos.lerArquivos('musicas/rock/','rock songs','txt')
+    songs_pop = basicos.lerArquivos('musicas/pop/','pop songs','txt')
+    songs_relaxar = basicos.lerArquivos('musicas/relaxar/', 'relaxar songs', 'txt')
+    songs_rap = basicos.lerArquivos('musicas/rap/', 'rap songs', 'txt')
+    songs_sads = basicos.lerArquivos('musicas/sads/', 'sads songs', 'txt')
     lista = []
     for song in songs_rock:
         lista.append(song.rstrip("\n"))
@@ -40,15 +40,19 @@ def reproduzir_musica():
         print(f'   * {key}')
     print('-' * 30)
 
-    reps = str(input('Qual playlist voçê quer selecionar? ')).strip().lower()
+    basicos.reproduzir_voz('Aquir estão todas as playlist criadas')
+    basicos.reproduzir_voz('selecione a playlist que voçê deseja')
+    reps = str(input('Qual playlist voçê que selecionar? ')).strip().lower()
 
     if reps == 'rock':
+        basicos.reproduzir_voz(f'voçê escolheu a playlist {reps}')
         lista_musicas = []
         for key, musica in estilo_musicas.items():
             if key == 'rock':
                 for i, valor in enumerate(musica):
                     lista_musicas.append(valor)
                     print(f'{i} -> {valor}')
+        basicos.reproduzir_voz('Escolha entre o modo aleatório ou o modo manual')
         reps = str(input('modo aleatorio | modo manual: ')).strip().lower()
 
         if 'aleatorio' in reps:
@@ -81,12 +85,14 @@ def reproduzir_musica():
                 while pygame.mixer.music.get_busy() == True:
                     continue
     elif reps == 'pop':
+        basicos.reproduzir_voz(f'voçê escolheu a playlist {reps}')
         lista_musicas = []
         for key, musica in estilo_musicas.items():
             if key == 'pop':
                 for i, valor in enumerate(musica):
                     lista_musicas.append(valor)
                     print(f'{i} -> {valor}')
+        basicos.reproduzir_voz('Escolha entre o modo aleatório ou o modo manual')
         reps = str(input('modo aleatorio | modo manual: ')).strip().lower()
 
         if 'aleatorio' in reps:
@@ -119,12 +125,14 @@ def reproduzir_musica():
                 while pygame.mixer.music.get_busy() == True:
                     continue
     elif reps == 'relaxar':
+        basicos.reproduzir_voz(f'voçê escolheu a playlist {reps}')
         lista_musicas = []
         for key, musica in estilo_musicas.items():
             if key == 'relaxar':
                 for i, valor in enumerate(musica):
                     lista_musicas.append(valor)
                     print(f'{i} -> {valor}')
+        basicos.reproduzir_voz('Escolha entre o modo aleatório ou o modo manual')
         reps = str(input('modo aleatorio | modo manual: ')).strip().lower()
 
         if 'aleatorio' in reps:
@@ -157,12 +165,14 @@ def reproduzir_musica():
                 while pygame.mixer.music.get_busy() == True:
                     continue
     elif reps == 'rap':
+        basicos.reproduzir_voz(f'voçê escolheu a playlist {reps}')
         lista_musicas = []
         for key, musica in estilo_musicas.items():
             if key == 'rap':
                 for i, valor in enumerate(musica):
                     lista_musicas.append(valor)
                     print(f'{i} -> {valor}')
+        basicos.reproduzir_voz('Escolha entre o modo aleatório ou o modo manual')
         reps = str(input('modo aleatorio | modo manual: ')).strip().lower()
 
         if 'aleatorio' in reps:
@@ -195,12 +205,14 @@ def reproduzir_musica():
                 while pygame.mixer.music.get_busy() == True:
                     continue
     elif reps == 'sads':
+        basicos.reproduzir_voz(f'voçê escolheu a playlist {reps}')
         lista_musicas = []
         for key, musica in estilo_musicas.items():
             if key == 'pop':
                 for i, valor in enumerate(musica):
                     lista_musicas.append(valor)
                     print(f'{i} -> {valor}')
+        basicos.reproduzir_voz('Escolha entre o modo aleatório ou o modo manual')
         reps = str(input('modo aleatorio | modo manual: ')).strip().lower()
 
         if 'aleatorio' in reps:
@@ -232,5 +244,6 @@ def reproduzir_musica():
                 pygame.mixer.music.play()
                 while pygame.mixer.music.get_busy() == True:
                     continue
-
-reproduzir_musica()
+    else:
+        basicos.reproduzir_voz('Essa playlist não existe, ou pelo menos não ainda')
+    print('-=' * 30)

@@ -3,6 +3,7 @@ import speech_recognition as sr
 from function_Uteis import basicos
 from function_Uteis import wikipedia
 from function_Uteis import pesquisa_web
+from function_Uteis import play_musica
 
 
 def Menu():
@@ -110,6 +111,8 @@ def convesar_annabeth(micro):
                                 pesquisa_web.abir_paginas_web(pagina)
                             elif entrada == "buscar conteúdo na web":
                                 pesquisa_web.buscar_conteudo_web()
+                            elif "toque" in entrada and "música" in entrada:
+                                play_musica.reproduzir_musica()
                             elif "modo" in entrada and "saída" in entrada:
                                 basicos.reproduzir_voz('saindo do modo conversa!')
                                 break
