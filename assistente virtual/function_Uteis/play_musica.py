@@ -247,3 +247,4 @@ def reproduzir_musica():
     else:
         basicos.reproduzir_voz('Essa playlist não existe, ou pelo menos não ainda')
     print('-=' * 30)
+    
