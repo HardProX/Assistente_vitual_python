@@ -2,6 +2,7 @@ import pyttsx3
 from random import randint
 from datetime import datetime
 
+
 #configuração de voz
 engine = pyttsx3.init()
 engine.setProperty("rate", 150)
@@ -16,6 +17,11 @@ def escreval(frase):
     print('~' * (len(frase) + 4))
 
 
+def reproduzir_voz(frase):
+    engine.say(frase)
+    engine.runAndWait()
+
+
 def nomeAleatorio():
     ABC = ['a','b','c','d','e','f','g','h','i','j','k','l','m',
            'n','o','p','q','r','s','t','u','v','w','x','y','z']
@@ -23,7 +29,7 @@ def nomeAleatorio():
     nome = ""
     while cont <= 5:
         nome += "" + ABC[randint(0,25)]
-        cont+=1
+        cont += 1
     return nome
 
 
@@ -38,17 +44,12 @@ def lerArquivos(caminho,nome,extençao):
     return conteudo
 
 
-def reproduzir_voz(frase):
-    engine.say(frase)
-    engine.runAndWait()
-
-
 def horario(data):
     if data == "hora":
         now = datetime.now()
-        hora_de_agora = (f'{now.hour} e {now.minute}')
+        hora_de_agora = (f'{now.hour}:{now.minute}')
         return hora_de_agora
     elif data == "data":
         now = datetime.now()
-        data_de_hoje = (f'{now.day} do {now.month} de {now.year}')
+        data_de_hoje = (f'{now.day}/{now.month}/{now.year}')
         return data_de_hoje
