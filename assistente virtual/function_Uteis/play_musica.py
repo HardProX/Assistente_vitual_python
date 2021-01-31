@@ -14,7 +14,7 @@ def reproduzir_musica():
         estilo_musicas[f'{key}'] = lista
 
     print('-=' * 30)
-    print(f'{"menu estilos musicais".center(60)}')
+    print(f'\033[1;36m{"menu estilos musicais".center(60)}\033[m')
     print('-=' * 30)
 
     print('-' * 30)
@@ -24,7 +24,7 @@ def reproduzir_musica():
 
     basicos.reproduzir_voz('Aquir estão todas as playlist já criadas')
     basicos.reproduzir_voz('selecione a playlist que voçê deseja')
-    nomePlay = str(input('Qual playlist voçê que selecionar? ')).strip().lower()
+    nomePlay = str(input('\033[1;37mQual playlist voçê que selecionar? \033[m')).strip().lower()
 
     if nomePlay in estilo_musicas.keys():
         basicos.reproduzir_voz(f'voçê escolheu a playlist {nomePlay}')
@@ -33,9 +33,9 @@ def reproduzir_musica():
             if key == nomePlay:
                 for i, valor in enumerate(musica):
                     lista_musicas.append(valor)
-                    print(f'{i} -> {valor}')
+                    print(f'{i} -> \033[1;37m{valor}\033[m')
         basicos.reproduzir_voz('Escolha entre o modo aleatório ou o modo manual')
-        reps = str(input('modo aleátorio | modo manual: ')).strip().lower()
+        reps = str(input('\033[1;37mmodo aleátorio | modo manual: \033[m')).strip().lower()
 
         if 'aleátorio' in reps:
             pygame.mixer.init()
@@ -56,9 +56,9 @@ def reproduzir_musica():
         else:
             pygame.mixer.init()
             lista_musicas_selecionadas = []
-            max = int(input('Quantas musicas voçê quer selecionar? '))
+            max = int(input('\033[1;37mQuantas musicas voçê quer selecionar? \033[m'))
             for c in range(0, max):
-                music = int(input(f'qual musica deseja colocar na posição {c}° ? '))
+                music = int(input(f'\033[1;37mqual musica deseja colocar na posição {c}° ? \033[m'))
                 lista_musicas_selecionadas.append(music)
             for c in range(0, max):
                 musica = lista_musicas[lista_musicas_selecionadas[c]]
@@ -68,5 +68,5 @@ def reproduzir_musica():
                     continue
     else:
         basicos.reproduzir_voz('Essa playlist não existe, ou pelo menos não ainda')
-    print('PLAYLIST ENCERRADA!')
+    print('\033[7mPLAYLIST ENCERRADA!\033[m')
     print('-=' * 30)

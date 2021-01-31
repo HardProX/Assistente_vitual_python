@@ -14,10 +14,10 @@ def convesar_annabeth(micro=True):
     with sr.Microphone() as s:
         rec.adjust_for_ambient_noise(s)
         print('-' * 40)
-        print('[1] => "annabeth iniciar" ')
-        print('[2] => "configuração do microforne" ')
-        print('[3] => "encerrar programa" ')
-        print('[4] -> "mostrar menu novamente" ')
+        print('[1] => "\033[35mannabeth iniciar\033[m" ')
+        print('[2] => "\033[35mconfiguração do microforne\033[m" ')
+        print('[3] => "\033[35mencerrar programa\033[m" ')
+        print('[4] -> "\033[35mmostrar menu novamente\033[m" ')
         print('-' * 40)
         basicos.reproduzir_voz("este é o menu das opções disponíveis!")
         basicos.reproduzir_voz('fale a opção desejada!')
@@ -27,24 +27,24 @@ def convesar_annabeth(micro=True):
                 inicialização = rec.recognize_google(voz, language="pt")
                 inicialização.lower()
             except sr.UnknownValueError:
-                basicos.escreval('não entedir o que foi dito')
+                basicos.escreval('\033[1;31mnão entedir o que foi dito\033[m')
             else:
-                basicos.escreval(f'voçê disse: {inicialização}')
+                basicos.escreval(f'\033[1;30mvoçê disse: {inicialização}\033[m')
                 if inicialização == 'encerrar programa':
                     basicos.reproduzir_voz("encerrando o programa!, foi um prazer atendê-lo!")
                     break
                 elif inicialização == "mostrar menu novamente":
                     print('-' * 40)
-                    print('[1] => "annabeth iniciar" ')
-                    print('[2] => "configuração do microforne" ')
-                    print('[3] => "encerrar programa" ')
-                    print('[4] -> "mostrar menu novamente" ')
+                    print('[1] => "\033[35mannabeth iniciar\033[m" ')
+                    print('[2] => "\033[35mconfiguração do microforne\033[m" ')
+                    print('[3] => "\033[35mencerrar programa\033[m" ')
+                    print('[4] -> "\033[35mmostrar menu novamente\033[m" ')
                     print('-' * 40)
                 elif inicialização == "configuração do microfone":
                     basicos.reproduzir_voz("Qual opção o senhor deseja?")
                     print("-=" * 15)
-                    print(f"{'[1]-> MICROFORNE ATIVADO'}")
-                    print(f"{'[2]-> MICROFORNE DESATIVADO'}")
+                    print(f"\033[33m{'[1]-> MICROFORNE ATIVADO'}\033[m")
+                    print(f"\033[31m{'[2]-> MICROFORNE DESATIVADO'}\033[m")
                     print("-=" * 15)
                     try:
                         while True:
@@ -54,12 +54,12 @@ def convesar_annabeth(micro=True):
 
                             if reps == "primeira opção" or reps == "numero 1" or reps == 'microforne ativado':
                                 micro = True
-                                print(f"{'MICROFORNE ATIVADO':-^30}")
+                                print(f"\033[33m{'MICROFORNE ATIVADO':-^30}\033[m")
                                 basicos.reproduzir_voz("MICROFORNE ATIVADO")
                                 break
                             elif reps == "segunda opção" or reps == "numero 2" or reps == 'microforne desativado':
                                 micro = False
-                                print(f"{'MICROFORNE DESATIVADO':-^30}")
+                                print(f"\033[31m{'MICROFORNE DESATIVADO':-^30}\033[m")
                                 basicos.reproduzir_voz("MICROFORNE DESATIVADO")
                                 break
                             else:
@@ -72,12 +72,12 @@ def convesar_annabeth(micro=True):
                                 reps = int(input('Digite a opção desejada: '))
                                 if reps == 1:
                                     micro = True
-                                    print(f"{'MICROFORNE ATIVADO':-^30}")
+                                    print(f"\033[33m{'MICROFORNE ATIVADO':-^30}\033[m")
                                     basicos.reproduzir_voz("Primeira opção ativada")
                                     break
                                 elif reps == 2:
                                     micro = False
-                                    print(f"{'MICROFORNE DESATIVADO':-^30}")
+                                    print(f"\033[31m{'MICROFORNE DESATIVADO':-^30}\033[m")
                                     basicos.reproduzir_voz("Segunda opção ativada")
                                     break
                                 else:
@@ -88,14 +88,14 @@ def convesar_annabeth(micro=True):
                     basicos.reproduzir_voz("iniciando")
                     basicos.reproduzir_voz("eu estou pronta para ser usada")
                     print('-' * 40)
-                    print('[1] => "qual o horário atual?" ')
-                    print(f'[2] => "wikipédia {"pesquisa"}" ')
-                    print(f'[3] => "abrir página web" ')
-                    print(f'[4] => "procurar conteúdo na web" ')
-                    print(f'[5] => "abrir playlist de músicas" ')
-                    print('[6] -> "mostrar menu novamente" ')
-                    print('[7] -> "limpe a tela" ')
-                    print('[8] -> "sair deste modo" ')
+                    print('[1] => "\033[35mqual o horário atual?\033[m" ')
+                    print(f'[2] => "\033[35mwikipédia {"pesquisa"}\033[m" ')
+                    print(f'[3] => "\033[35mabrir página web\033[m" ')
+                    print(f'[4] => "\033[35mprocurar conteúdo na web\033[m" ')
+                    print(f'[5] => "\033[35mabrir playlist de músicas\033[m" ')
+                    print('[6] -> "\033[35mmostrar menu novamente\033[m" ')
+                    print('[7] -> "\033[35mlimpe a tela\033[m" ')
+                    print('[8] -> "\033[35msair deste modo\033[m" ')
                     print('-' * 40)
                     while True:
                         try:
@@ -103,7 +103,7 @@ def convesar_annabeth(micro=True):
                                 voz = rec.listen(s)
                                 entrada = rec.recognize_google(voz, language="pt")
                                 entrada = entrada.lower()
-                                basicos.escreval(f'voçê disse: {entrada}')
+                                basicos.escreval(f'\033[1;32mvoçê disse: {entrada}\033[m')
                                 basicos.reproduzir_voz(f"voçê disse {entrada}")
                             elif not micro:
                                 entrada = str(input('Digite alguma coisa: ')).strip().lower()
@@ -128,18 +128,18 @@ def convesar_annabeth(micro=True):
                                 os.system('cls') or None
                             elif entrada == "mostrar menu novamente":
                                 print('-' * 40)
-                                print('[1] => "qual o horário atual?" ')
-                                print(f'[2] => "wikipédia {"pesquisa"}" ')
-                                print(f'[3] => "abrir página web" ')
-                                print(f'[4] => "procurar conteúdo na web" ')
-                                print(f'[5] => "abrir playlist de músicas" ')
-                                print('[6] -> "mostrar menu novamente" ')
-                                print('[7] -> "limpe a tela" ')
-                                print('[8] -> "sair deste modo" ')
+                                print('[1] => "\033[35mqual o horário atual?\033[m" ')
+                                print(f'[2] => "\033[35mwikipédia {"pesquisa"}\033[m" ')
+                                print(f'[3] => "\033[35mabrir página web\033[m" ')
+                                print(f'[4] => "\033[35mprocurar conteúdo na web\033[m" ')
+                                print(f'[5] => "\033[35mabrir playlist de músicas\033[m" ')
+                                print('[6] -> "\033[35mmostrar menu novamente\033[m" ')
+                                print('[7] -> "\033[35mlimpe a tela\033[m" ')
+                                print('[8] -> "\033[35msair deste modo\033[m" ')
                                 print('-' * 40)
                             else:
-                                print('Ainda não possuo esse comando!')
+                                print('\033[1;33mAinda não possuo esse comando!\033[m')
                                 basicos.reproduzir_voz("Ainda não possuo esse comando!")
                         except sr.UnknownValueError:
-                            basicos.escreval(f"Annabeth-> Eu não entendi")
+                            basicos.escreval(f"\033[1;31mAnnabeth-> Eu não entendi\033[m")
                             basicos.reproduzir_voz("Eu não entendi o que foi dito")

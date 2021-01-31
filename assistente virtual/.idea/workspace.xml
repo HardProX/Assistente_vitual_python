@@ -20,23 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f343dec-a84e-4a11-b7b3-542f58136570" name="Default Changelist" comment="l">
-      <change beforePath="$PROJECT_DIR$/.google-cookie" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/assistente virtual.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/function_Uteis/annabeth.py" beforeDir="false" afterPath="$PROJECT_DIR$/function_Uteis/annabeth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function_Uteis/basicos.py" beforeDir="false" afterPath="$PROJECT_DIR$/function_Uteis/basicos.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/function_Uteis/pesquisa_web.py" beforeDir="false" afterPath="$PROJECT_DIR$/function_Uteis/pesquisa_web.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/function_Uteis/play_musica.py" beforeDir="false" afterPath="$PROJECT_DIR$/function_Uteis/play_musica.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function_Uteis/wikipedia.py" beforeDir="false" afterPath="$PROJECT_DIR$/function_Uteis/wikipedia.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicas/pop/pop songs.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicas/rap/rap songs.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicas/relaxar/relaxar songs.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicas/rock/rock songs.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicas/sads/sads songs.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,32 +148,32 @@
     <option name="LAST_COMMIT_MESSAGE" value="l" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1259" height="536" key="GridCell.Tab.0.bottom" timestamp="1611730059155">
+    <state width="1259" height="536" key="GridCell.Tab.0.bottom" timestamp="1612043395807">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
     <state width="1259" height="352" key="GridCell.Tab.0.bottom/0.0.1280.770/1280.0.1360.738@0.0.1280.770" timestamp="1610753657895" />
-    <state width="1259" height="536" key="GridCell.Tab.0.bottom/0.0.1280.770/1280.0.1360.768@0.0.1280.770" timestamp="1611730059155" />
+    <state width="1259" height="536" key="GridCell.Tab.0.bottom/0.0.1280.770/1280.0.1360.768@0.0.1280.770" timestamp="1612043395807" />
     <state width="1339" height="535" key="GridCell.Tab.0.bottom/0.0.1280.770/1280.0.1360.768@1280.0.1360.768" timestamp="1611604383384" />
     <state width="1259" height="612" key="GridCell.Tab.0.bottom/0.0.1280.770@0.0.1280.770" timestamp="1610425741916" />
-    <state width="1259" height="536" key="GridCell.Tab.0.center" timestamp="1611730059154">
+    <state width="1259" height="536" key="GridCell.Tab.0.center" timestamp="1612043395806">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
     <state width="1259" height="352" key="GridCell.Tab.0.center/0.0.1280.770/1280.0.1360.738@0.0.1280.770" timestamp="1610753657894" />
-    <state width="1259" height="536" key="GridCell.Tab.0.center/0.0.1280.770/1280.0.1360.768@0.0.1280.770" timestamp="1611730059154" />
+    <state width="1259" height="536" key="GridCell.Tab.0.center/0.0.1280.770/1280.0.1360.768@0.0.1280.770" timestamp="1612043395806" />
     <state width="1339" height="535" key="GridCell.Tab.0.center/0.0.1280.770/1280.0.1360.768@1280.0.1360.768" timestamp="1611604383383" />
     <state width="1259" height="612" key="GridCell.Tab.0.center/0.0.1280.770@0.0.1280.770" timestamp="1610425741916" />
-    <state width="1259" height="536" key="GridCell.Tab.0.left" timestamp="1611730059154">
+    <state width="1259" height="536" key="GridCell.Tab.0.left" timestamp="1612043395805">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
     <state width="1259" height="352" key="GridCell.Tab.0.left/0.0.1280.770/1280.0.1360.738@0.0.1280.770" timestamp="1610753657894" />
-    <state width="1259" height="536" key="GridCell.Tab.0.left/0.0.1280.770/1280.0.1360.768@0.0.1280.770" timestamp="1611730059154" />
+    <state width="1259" height="536" key="GridCell.Tab.0.left/0.0.1280.770/1280.0.1360.768@0.0.1280.770" timestamp="1612043395805" />
     <state width="1339" height="535" key="GridCell.Tab.0.left/0.0.1280.770/1280.0.1360.768@1280.0.1360.768" timestamp="1611604383382" />
     <state width="1259" height="612" key="GridCell.Tab.0.left/0.0.1280.770@0.0.1280.770" timestamp="1610425741915" />
-    <state width="1259" height="536" key="GridCell.Tab.0.right" timestamp="1611730059155">
+    <state width="1259" height="536" key="GridCell.Tab.0.right" timestamp="1612043395806">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
     <state width="1259" height="352" key="GridCell.Tab.0.right/0.0.1280.770/1280.0.1360.738@0.0.1280.770" timestamp="1610753657895" />
-    <state width="1259" height="536" key="GridCell.Tab.0.right/0.0.1280.770/1280.0.1360.768@0.0.1280.770" timestamp="1611730059155" />
+    <state width="1259" height="536" key="GridCell.Tab.0.right/0.0.1280.770/1280.0.1360.768@0.0.1280.770" timestamp="1612043395806" />
     <state width="1339" height="535" key="GridCell.Tab.0.right/0.0.1280.770/1280.0.1360.768@1280.0.1360.768" timestamp="1611604383383" />
     <state width="1259" height="612" key="GridCell.Tab.0.right/0.0.1280.770@0.0.1280.770" timestamp="1610425741916" />
     <state width="1259" height="240" key="GridCell.Tab.1.bottom" timestamp="1610414994209">
