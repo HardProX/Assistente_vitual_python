@@ -10,4 +10,4 @@ print(f"\033[1;37m{'Programa encerrado!':-^60}\033[m")
 print("-/" * 30)
 print("-=" * 40)
 
-#the code is an arte
+#the code is an arte, but is complicated

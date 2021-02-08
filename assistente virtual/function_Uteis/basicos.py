@@ -33,13 +33,13 @@ def nomeAleatorio():
     return nome
 
 
-def criaArquivos(caminho,nome,extençao, conteudo):
-    arquivo = open(f"{caminho}{nome}.{extençao}", "w", encoding="utf-8")
+def criaArquivos(caminho,nome,extençao, conteudo, modo='a'):
+    arquivo = open(f"{caminho}{nome}.{extençao}", f"{modo}", encoding="utf-8")
     arquivo.write(conteudo)
 
 
 def lerArquivos(caminho,nome,extençao):
-    arquivo = open(f"{caminho}{nome}.{extençao}", "r")
+    arquivo = open(f"{caminho}{nome}.{extençao}", "r",encoding="utf-8" )
     conteudo = arquivo.readlines()
     return conteudo
 

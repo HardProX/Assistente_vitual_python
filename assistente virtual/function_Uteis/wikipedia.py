@@ -16,7 +16,7 @@ def wikipédia(entrada):
     basicos.reproduzir_voz("Agora estamos buscando o conteúdo dela")
     print(f'\033[1;36mFonte: {pesquisa.url}\033[m')
     print(f'\033[1;36m{pesquisa.content}\033[m')
-    basicos.criaArquivos("Pesquisas wikipédia/", f"{pesquisa.title}{basicos.nomeAleatorio()}", "txt", pesquisa.content)
+    basicos.criaArquivos("Pesquisas wikipédia/", f"{pesquisa.title}{basicos.nomeAleatorio()}", "txt", pesquisa.content, "a")
     rec = sr.Recognizer()
     with sr.Microphone() as s:
         basicos.reproduzir_voz("você deseja que eu leia?")
@@ -33,7 +33,7 @@ def wikipédia(entrada):
         except sr.UnknownValueError:
             basicos.reproduzir_voz("não entendir o que você disse!")
             basicos.reproduzir_voz("acho melhor digitar!")
-            while True:
+            while 1:
                 reps = str(input('sim|não: ')).strip().lower()
                 if reps == "sim":
                     basicos.reproduzir_voz(pesquisa.content)

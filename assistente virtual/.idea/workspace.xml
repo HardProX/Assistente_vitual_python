@@ -20,12 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f343dec-a84e-4a11-b7b3-542f58136570" name="Default Changelist" comment="l">
+      <change afterPath="$PROJECT_DIR$/function_Uteis/Adiministração.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/function_Uteis/cpu_check.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/function_Uteis/annabeth.py" beforeDir="false" afterPath="$PROJECT_DIR$/function_Uteis/annabeth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function_Uteis/basicos.py" beforeDir="false" afterPath="$PROJECT_DIR$/function_Uteis/basicos.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/function_Uteis/pesquisa_web.py" beforeDir="false" afterPath="$PROJECT_DIR$/function_Uteis/pesquisa_web.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/function_Uteis/play_musica.py" beforeDir="false" afterPath="$PROJECT_DIR$/function_Uteis/play_musica.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/function_Uteis/wikipedia.py" beforeDir="false" afterPath="$PROJECT_DIR$/function_Uteis/wikipedia.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pywhatkit_dbs.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +56,30 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunManager" selected="Python.main">
+    <configuration name="cpu_check" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="assistente virtual" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/function_Uteis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/function_Uteis/cpu_check.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="assistente virtual" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -67,6 +93,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pesquisa_web" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="assistente virtual" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/function_Uteis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/function_Uteis/pesquisa_web.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -100,6 +147,8 @@
       <list>
         <item itemvalue="Python.main" />
         <item itemvalue="Python.play_musica" />
+        <item itemvalue="Python.pesquisa_web" />
+        <item itemvalue="Python.cpu_check" />
       </list>
     </recent_temporary>
   </component>
@@ -148,49 +197,65 @@
     <option name="LAST_COMMIT_MESSAGE" value="l" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1259" height="536" key="GridCell.Tab.0.bottom" timestamp="1612043395807">
+    <state x="1740" y="139" key="FileChooserDialogImpl" timestamp="1612133019318">
+      <screen x="1280" y="0" width="1360" height="768" />
+    </state>
+    <state x="1740" y="139" key="FileChooserDialogImpl/0.0.1280.770/1280.0.1360.768@1280.0.1360.768" timestamp="1612133019318" />
+    <state width="1259" height="569" key="GridCell.Tab.0.bottom" timestamp="1612275105583">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
     <state width="1259" height="352" key="GridCell.Tab.0.bottom/0.0.1280.770/1280.0.1360.738@0.0.1280.770" timestamp="1610753657895" />
     <state width="1259" height="536" key="GridCell.Tab.0.bottom/0.0.1280.770/1280.0.1360.768@0.0.1280.770" timestamp="1612043395807" />
-    <state width="1339" height="535" key="GridCell.Tab.0.bottom/0.0.1280.770/1280.0.1360.768@1280.0.1360.768" timestamp="1611604383384" />
-    <state width="1259" height="612" key="GridCell.Tab.0.bottom/0.0.1280.770@0.0.1280.770" timestamp="1610425741916" />
-    <state width="1259" height="536" key="GridCell.Tab.0.center" timestamp="1612043395806">
+    <state width="1339" height="568" key="GridCell.Tab.0.bottom/0.0.1280.770/1280.0.1360.768@1280.0.1360.768" timestamp="1612207738841" />
+    <state width="1259" height="569" key="GridCell.Tab.0.bottom/0.0.1280.770@0.0.1280.770" timestamp="1612275105583" />
+    <state width="1259" height="569" key="GridCell.Tab.0.center" timestamp="1612275105583">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
     <state width="1259" height="352" key="GridCell.Tab.0.center/0.0.1280.770/1280.0.1360.738@0.0.1280.770" timestamp="1610753657894" />
     <state width="1259" height="536" key="GridCell.Tab.0.center/0.0.1280.770/1280.0.1360.768@0.0.1280.770" timestamp="1612043395806" />
-    <state width="1339" height="535" key="GridCell.Tab.0.center/0.0.1280.770/1280.0.1360.768@1280.0.1360.768" timestamp="1611604383383" />
-    <state width="1259" height="612" key="GridCell.Tab.0.center/0.0.1280.770@0.0.1280.770" timestamp="1610425741916" />
-    <state width="1259" height="536" key="GridCell.Tab.0.left" timestamp="1612043395805">
+    <state width="1339" height="568" key="GridCell.Tab.0.center/0.0.1280.770/1280.0.1360.768@1280.0.1360.768" timestamp="1612207738840" />
+    <state width="1259" height="569" key="GridCell.Tab.0.center/0.0.1280.770@0.0.1280.770" timestamp="1612275105583" />
+    <state width="1259" height="569" key="GridCell.Tab.0.left" timestamp="1612275105582">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
     <state width="1259" height="352" key="GridCell.Tab.0.left/0.0.1280.770/1280.0.1360.738@0.0.1280.770" timestamp="1610753657894" />
     <state width="1259" height="536" key="GridCell.Tab.0.left/0.0.1280.770/1280.0.1360.768@0.0.1280.770" timestamp="1612043395805" />
-    <state width="1339" height="535" key="GridCell.Tab.0.left/0.0.1280.770/1280.0.1360.768@1280.0.1360.768" timestamp="1611604383382" />
-    <state width="1259" height="612" key="GridCell.Tab.0.left/0.0.1280.770@0.0.1280.770" timestamp="1610425741915" />
-    <state width="1259" height="536" key="GridCell.Tab.0.right" timestamp="1612043395806">
+    <state width="1339" height="568" key="GridCell.Tab.0.left/0.0.1280.770/1280.0.1360.768@1280.0.1360.768" timestamp="1612207738840" />
+    <state width="1259" height="569" key="GridCell.Tab.0.left/0.0.1280.770@0.0.1280.770" timestamp="1612275105582" />
+    <state width="1259" height="569" key="GridCell.Tab.0.right" timestamp="1612275105583">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
     <state width="1259" height="352" key="GridCell.Tab.0.right/0.0.1280.770/1280.0.1360.738@0.0.1280.770" timestamp="1610753657895" />
     <state width="1259" height="536" key="GridCell.Tab.0.right/0.0.1280.770/1280.0.1360.768@0.0.1280.770" timestamp="1612043395806" />
-    <state width="1339" height="535" key="GridCell.Tab.0.right/0.0.1280.770/1280.0.1360.768@1280.0.1360.768" timestamp="1611604383383" />
-    <state width="1259" height="612" key="GridCell.Tab.0.right/0.0.1280.770@0.0.1280.770" timestamp="1610425741916" />
-    <state width="1259" height="240" key="GridCell.Tab.1.bottom" timestamp="1610414994209">
-      <screen x="0" y="0" width="1280" height="770" />
+    <state width="1339" height="568" key="GridCell.Tab.0.right/0.0.1280.770/1280.0.1360.768@1280.0.1360.768" timestamp="1612207738840" />
+    <state width="1259" height="569" key="GridCell.Tab.0.right/0.0.1280.770@0.0.1280.770" timestamp="1612275105583" />
+    <state width="1339" height="239" key="GridCell.Tab.1.bottom" timestamp="1612132515010">
+      <screen x="1280" y="0" width="1360" height="768" />
     </state>
+    <state width="1339" height="239" key="GridCell.Tab.1.bottom/0.0.1280.770/1280.0.1360.768@1280.0.1360.768" timestamp="1612132515010" />
     <state width="1259" height="240" key="GridCell.Tab.1.bottom/0.0.1280.770@0.0.1280.770" timestamp="1610414994209" />
-    <state width="1259" height="240" key="GridCell.Tab.1.center" timestamp="1610414994209">
-      <screen x="0" y="0" width="1280" height="770" />
+    <state width="1339" height="239" key="GridCell.Tab.1.center" timestamp="1612132515010">
+      <screen x="1280" y="0" width="1360" height="768" />
     </state>
+    <state width="1339" height="239" key="GridCell.Tab.1.center/0.0.1280.770/1280.0.1360.768@1280.0.1360.768" timestamp="1612132515010" />
     <state width="1259" height="240" key="GridCell.Tab.1.center/0.0.1280.770@0.0.1280.770" timestamp="1610414994209" />
-    <state width="1259" height="240" key="GridCell.Tab.1.left" timestamp="1610414994209">
-      <screen x="0" y="0" width="1280" height="770" />
+    <state width="1339" height="239" key="GridCell.Tab.1.left" timestamp="1612132515010">
+      <screen x="1280" y="0" width="1360" height="768" />
     </state>
+    <state width="1339" height="239" key="GridCell.Tab.1.left/0.0.1280.770/1280.0.1360.768@1280.0.1360.768" timestamp="1612132515010" />
     <state width="1259" height="240" key="GridCell.Tab.1.left/0.0.1280.770@0.0.1280.770" timestamp="1610414994209" />
-    <state width="1259" height="240" key="GridCell.Tab.1.right" timestamp="1610414994209">
-      <screen x="0" y="0" width="1280" height="770" />
+    <state width="1339" height="239" key="GridCell.Tab.1.right" timestamp="1612132515010">
+      <screen x="1280" y="0" width="1360" height="768" />
     </state>
+    <state width="1339" height="239" key="GridCell.Tab.1.right/0.0.1280.770/1280.0.1360.768@1280.0.1360.768" timestamp="1612132515010" />
     <state width="1259" height="240" key="GridCell.Tab.1.right/0.0.1280.770@0.0.1280.770" timestamp="1610414994209" />
+    <state x="1461" y="29" key="SettingsEditor" timestamp="1612158123441">
+      <screen x="1280" y="0" width="1360" height="768" />
+    </state>
+    <state x="1461" y="29" key="SettingsEditor/0.0.1280.770/1280.0.1360.768@1280.0.1360.768" timestamp="1612158123441" />
+    <state x="1623" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1612136897816">
+      <screen x="1280" y="0" width="1360" height="768" />
+    </state>
+    <state x="1623" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1280.770/1280.0.1360.768@1280.0.1360.768" timestamp="1612136897816" />
   </component>
 </project>
