@@ -7,9 +7,8 @@ def func_adm():
     print('-=' * 20)
     senha = str(input('Digite sua Senha: ')).strip().lower()
 
-    if senha == 'root':
-        basicos.reproduzir_voz('esse menu mostra, todas as funções administrativa')
-        basicos.reproduzir_voz('como administrador, você pode ver todas')
+    if senha == '****':
+        basicos.reproduzir_voz('funções administrativas')
 
         print('==' * 20)
         print(f'\033[1;31m{"MENU ADM".center(40)}\033[m')

@@ -30,7 +30,7 @@ def InforPC():
             print(f'\033[1;37m{value}GHZ\033[m')
         else:
             print(f'\033[1;37m{value}\033[m')
-    sleep(8)
+    sleep(2)
     basicos.reproduzir_voz('Informações dos discos rígidos')
     print('--' * 20)
     print(f'\033[1;31m{"Discos Rigidos".center(40)}\033[m')
@@ -44,7 +44,7 @@ def InforPC():
         print(f'Sistema de Arquivos: \033[1;37m{disklist[i].fstype}\033[m')
         print()
         i += 1
-    sleep(4)
+    sleep(2)
     basicos.reproduzir_voz('informações de memória')
     print('--' * 20)
     print(f'\033[1;31m{"Memoria".center(40)}\033[m')
@@ -59,7 +59,7 @@ def InforPC():
             print(f'\033[1;37m{value}%\033[m')
         else:
             print(f'\033[1;37m{value:.2f}GBs\033[m')
-    sleep(8)
+    sleep(2)
     basicos.reproduzir_voz('Informações da rede')
     print('--' * 20)
     print(f'\033[1;31m{"Internet".center(40)}\033[m')
@@ -75,7 +75,7 @@ def InforPC():
             print(f'\033[1;37m{value:.3f}GBs\033[m')
         else:
             print(f'\033[1;37m{value:.2f}Bytes\033[m')
-    sleep(4)
+    sleep(2)
     basicos.reproduzir_voz('você que analisar o consumo da sua C.P.U?')
     print('==' * 20)
     print(f'\033[1;31m{"Analise da CPU".center(40)}\033[m')

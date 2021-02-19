@@ -68,7 +68,6 @@ def abir_paginas_web():
     paginas_webs_salvas = paginas_webs_function()
 
     basicos.reproduzir_voz('Aquir estão todas as páginas já registradas')
-    basicos.reproduzir_voz('Escolha a que voçê deseja')
 
     print('-' * 40)
     for key in paginas_webs_salvas.keys():
@@ -114,8 +113,16 @@ def abir_paginas_web_adm():
         elif resp == 2:
             nomePag = str(input('Nome da pagina: ')).strip().lower()
             linkPag = str(input('Link da paginas: ')).strip().lower()
-            basicos.criaArquivos('paginas webs/lista_paginas/', 'keys_paginas_web', 'txt', f'{nomePag}', 'a')
-            basicos.criaArquivos('paginas webs/',f'pagina {nomePag}','txt', f'{linkPag}', 'w')
+            pws = paginas_webs_function()
+            Npag = []
+            for c in pws:
+                Npag.append(c.rstrip("\n"))
+            Npag.append(nomePag)
+            NE = ''
+            for v in Npag:
+                NE += v + "\n"
+            basicos.criaArquivos('paginas webs/lista_paginas/', 'keys_paginas_web', 'txt', f'{NE}', 'w')
+            basicos.criaArquivos('paginas webs/', f'pagina {nomePag}', 'txt', f'{linkPag}', 'w')
         elif resp == 3:
             pagExcluir = int(input('Qual página deseja excluir? ["-1" para cancelar] '))
             if pagExcluir == -1:

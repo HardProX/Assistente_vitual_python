@@ -8,7 +8,7 @@ from function_Uteis import cpu_check
 from function_Uteis import Adiministração
 
 
-def convesar_annabeth(micro=True):
+def convesar_annabeth(micro=False):
     basicos.reproduzir_voz("olá, meu nome é Annabeth!")
     basicos.reproduzir_voz("Estarei lhe ajudando quando você precisar")
     rec = sr.Recognizer()
@@ -23,24 +23,26 @@ def convesar_annabeth(micro=True):
         print('-' * 40)
         while 1:
             try:
-                voz = rec.listen(s)
-                inicialização = rec.recognize_google(voz, language="pt")
+                if micro:
+                    voz = rec.listen(s)
+                    inicialização = rec.recognize_google(voz, language="pt")
+                else:
+                    inicialização = str(input('Digite uma opção: ')).strip().lower()
             except sr.UnknownValueError:
                 basicos.escreval('\033[1;31mnão entedir o que foi dito\033[m')
             else:
-                basicos.escreval(f'\033[1;30mvoçê disse: {inicialização}\033[m')
-                if inicialização == 'encerrar programa':
-                    basicos.reproduzir_voz("encerrando o programa!, foi um prazer atendê-lo!")
+                if 'encerrar' in inicialização :
+                    basicos.reproduzir_voz("encerrando o script!")
                     break
-                elif inicialização == "mostrar menu novamente":
+                elif 'menu' in inicialização:
                     print('-' * 40)
                     print('[1] => "\033[35mannabeth iniciar\033[m" ')
                     print('[2] => "\033[35mconfiguração do microforne\033[m" ')
                     print('[3] => "\033[35mencerrar programa\033[m" ')
                     print('[4] -> "\033[35mmostrar menu novamente\033[m" ')
                     print('-' * 40)
-                elif inicialização == "configuração do microfone":
-                    basicos.reproduzir_voz("Qual opção o senhor deseja?")
+                elif 'microfone' in inicialização:
+                    basicos.reproduzir_voz("Qual opção você deseja?")
                     print("-=" * 15)
                     print(f"\033[33m{'[1]-> MICROFORNE ATIVADO'}\033[m")
                     print(f"\033[31m{'[2]-> MICROFORNE DESATIVADO'}\033[m")
@@ -83,7 +85,7 @@ def convesar_annabeth(micro=True):
                                     basicos.reproduzir_voz('por favor digite apenas Números disponiveis.')
                             except ValueError:
                                 basicos.reproduzir_voz('por favor Digite somente Números.')
-                elif inicialização == "Annabeth iniciar":
+                elif "iniciar" in inicialização:
                     basicos.reproduzir_voz("iniciando")
                     basicos.reproduzir_voz("eu estou pronta para ser usada")
                     print('-' * 40)
@@ -103,12 +105,11 @@ def convesar_annabeth(micro=True):
                             if micro:
                                 voz = rec.listen(s)
                                 entrada = rec.recognize_google(voz, language="pt")
-                                entrada = entrada.lower()
+                                entrada = entrada.lower().strip()
                                 basicos.escreval(f'\033[1;32mvoçê disse: {entrada}\033[m')
                                 basicos.reproduzir_voz(f"voçê disse {entrada}")
                             elif not micro:
                                 entrada = str(input('Digite alguma coisa: ')).strip().lower()
-                                basicos.reproduzir_voz(f"voçê disse {entrada}")
                         except sr.UnknownValueError:
                             basicos.escreval(f"\033[1;31mAnnabeth-> Eu não entendi\033[m")
                             basicos.reproduzir_voz("Eu não entendi o que foi dito")
@@ -134,7 +135,7 @@ def convesar_annabeth(micro=True):
                                 adm = Adiministração.func_adm()
                             elif 'limpe' in entrada and 'tela' in entrada:
                                 system('cls') or None
-                            elif entrada == "mostrar menu novamente":
+                            elif 'menu' in entrada:
                                 print('-' * 40)
                                 print('[0] => "\033[35mmostra informações do computador\033[m" ')
                                 print('[1] => "\033[35mqual o horário atual?\033[m" ')
